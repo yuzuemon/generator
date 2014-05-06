@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='ja' ng-app>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <title>ハンドサイン ジェネレータ</title>
+
+    <meta name='description' content='ハンドサインのジェネレータです。もちろん保存できます。'>
+    <meta name='keywords' content='ハンドサイン, ジェネレータ'>
+
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:url' content='http://yuzuemon.info/generator/handsign/'>
+
+    <meta property='og:description' content='ハンドサインのジェネレータです。 リアルタイム生成です。'>
+    <meta property='og:image' content='http://yuzuemon.info/generator/handsign/img/ogp.png'>
+    <meta property='og:locale' content='ja_JP'>
+    <meta property='og:site_name' content='ハンドサイン ジェネレータ'>
+    <meta property='og:type' content='article'>
+
+    <link rel='shortcut icon' href=''>
+    <link rel='canonical' href='http://yuzuemon.info/generator/handsign/'>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <link rel='stylesheet' href='./css/cover/cover.css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body id='handsign-generator' class='generator'>
+    <!-- facebook like button
+    ================================================== -->
+    <div id='fb-root'></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = '//connect.facebook.net/ja_JP/all.js#xfbml=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div class='container main'>
+      <div class='row'>
+        <div class='col-sm-12' role='main'>
+          <h1>ハンドサイン ジェネレータ</h1>
+          <p>地味に高画質です。もちろん保存できます。スマホで上手く保存できない時はブラウザから試してみてね。</p>
+        </div>
+      </div>
+
+
+      <div class='row sns'>
+        <div class='col-sm-12' role='main'>
+
+          <div data-plugins-type='mixi-favorite' data-href='http://yuzuemon.info/generator/handsign/' data-service-key='233d294aa31d640f3e6da600f230dad9e2bcedd4' data-size='medium' data-show-faces='false' data-show-count='true' data-show-comment='false' data-width='110'></div><script type='text/javascript'>(function(d) {var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//static.mixi.jp/js/plugins.js#lang=ja';d.getElementsByTagName('head')[0].appendChild(s);})(document);</script>
+          <a href='http://yuzuemon.info/generator/handsign/' class='hatena-bookmark-button' data-hatena-bookmark-layout='simple-balloon' title='このエントリーをはてなブックマークに追加'><img src='http://b.st-hatena.com/images/entry-button/button-only@2x.png' alt='このエントリーをはてなブックマークに追加' width='20' height='20' style='border: none;' /></a><script type='text/javascript' src='http://b.st-hatena.com/js/bookmark_button.js' charset='utf-8' async='async'></script>
+          <div class='fb-like' data-href='http://yuzuemon.info/generator/handsign/' data-send='false' data-layout='button_count' data-width='250' data-show-faces='false'></div>
+          <a href='https://twitter.com/share' class='twitter-share-button' data-lang='ja'>ツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        </div>
+      </div>
+
+
+      <div class='row input-title'>
+        <div class='col-sm-12' role='main'><input type='text' ng-model='text0' placeholder='スターバックスで使われるハンドサイン一覧' ></div>
+      </div>
+
+      <div class='row'>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text1' placeholder='買いに行くのは待て' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text2' placeholder='おｋ。買いに行くぞ' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text3' placeholder='スタバカードは持ったか？' ></div>
+      </div>
+
+      <div class='row'>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text4' placeholder='空席あり' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text5' placeholder='新作フラペチーノｷﾀｺﾚ！' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text6' placeholder='ホットのフラペチーノはやってない。無理を言わないように' ></div>
+      </div>
+
+      <div class='row'>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text7' placeholder='ノマドワーカーだ' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text8' placeholder='MacBook Airをしまえ' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text9' placeholder='エクストラホイップクリームストロベリーフラペチーノ下さい' ></div>
+      </div>
+
+      <div class='row'>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text10' placeholder='ドヤ顔でネサフしてるだけなのはやめろ' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text11' placeholder='予定にはなかったがフラペチーノをもう一杯下さい' ></div>
+        <div class='col-sm-4' role='main'><input type='text' ng-model='text12' placeholder='そのフラペチーノわたしのです' ></div>
+      </div>
+
+      <div class='row main'>
+        <div class='col-sm-12' id='screen'>
+          <p class='lead'>
+            <span id='handsign-status'>↓を画像にするには, 画像生成ボタンを押してください.</span>
+            <button id="generate" class='btn btn-lg btn-success'>画像生成</button>
+          </p>
+
+          <div id='handsign-sample'>
+            <div id='input0'  class='script title'><p>{{ text0 || 'スターバックスで使われるハンドサイン一覧' }}</p></div>
+            <div id='input1'  class='script row1 left'><p>{{ text1 || '買いに行くのは待て' }}</p></div>
+            <div id='input2'  class='script row1 center'><p>{{ text2 || 'おｋ。買いに行くぞ' }}</p></div>
+            <div id='input3'  class='script row1 right'><p>{{ text3 || 'スタバカードはもったか？' }}</p></div>
+            <div id='input4'  class='script row2 left'><p>{{ text4 || '空席あり' }}</p></div>
+            <div id='input5'  class='script row2 center'><p>{{ text5 || '新作フラペチーノｷﾀｺﾚ！' }}</p></div>
+            <div id='input6'  class='script row2 right'><p>{{ text6 || 'ホットのフラペチーノはやってない。無理を言わないように' }}</p></div>
+            <div id='input7'  class='script row3 left'><p>{{ text7 || 'ノマドワーカーだ' }}</p></div>
+            <div id='input8'  class='script row3 center'><p>{{ text8 || 'MacBook Airをしまえ' }}</p></div>
+            <div id='input9'  class='script row3 right'><p>{{ text9 || 'エクストラホイップクリームストロベリーフラペチーノ下さい' }}</p></div>
+            <div id='input10' class='script row4 left'><p>{{ text10 || 'ドヤ顔でネサフしてるだけなのはやめろ' }}</p></div>
+            <div id='input11' class='script row4 center'><p>{{ text11 || '予定にはなかったがフラペチーノをもう一杯下さい' }}</p></div>
+            <div id='input12' class='script row4 right'><p>{{ text12 || 'そのフラペチーノわたしのです' }}</p></div>
+            <div id='image-wrapper'><img src='img/handsign.jpg' alt=''></div>
+          </div>
+
+          <div id='handsign'></div>
+
+          <div class="adsense">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- generator -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:336px;height:280px"
+                 data-ad-client="ca-pub-9396747250290200"
+                 data-ad-slot="8943077236"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class='container footer'>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <p> 元画像: <a href='http://www.lefande.com/hands.html'>http://www.lefande.com</a> , by: <a href="https://twitter.com/yuzuemon">@yuzuemon</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+    <script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js'></script>
+    <script src='./js/generator.js'></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10950379-9', 'yuzuemon.info');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
+

@@ -1,2 +1,2 @@
-generator
-=========
+livereload-starter-kit
+======================
